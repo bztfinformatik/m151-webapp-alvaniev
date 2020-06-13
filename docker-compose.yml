@@ -12,12 +12,10 @@ services:
     command: docsify serve . -p 10000 --livereload-port 35729
 
   plantuml:
-    image: "jetty"
+    image: "plantuml/plantuml-server:jetty"
     container_name: m151-plantuml
     ports:
       - "10001:8080"
-    volumes:
-      - ./docker/plantuml.war:/var/lib/jetty/webapps/ROOT.war
 
   web:
     build: docker/web/
