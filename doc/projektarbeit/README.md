@@ -1,6 +1,8 @@
 Projekt Web-Applikation mit Datenbank (Modul 151)
 ==================================================
 
+[**LBV Modul 151-5 - 1 Elemente - Bearbeiten eines Projekts**](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=151&noheader=1)
+
 Ziel
 --------
 
@@ -89,7 +91,7 @@ Benotung
 -----------
 
 * Die Projektarbeit zählt zu 80% zur Modulnote.
-* Die Bewertung wird anhand der ICT LBV Modul 151-1 vorgenommen.
+* Die Bewertung wird anhand der ICT LBV Modul 151-5 vorgenommen.
 * Bewertet wird am Schluss:
   * Dokumentation (50%):
     * Sinnvolle Zeitplanung, 10%
