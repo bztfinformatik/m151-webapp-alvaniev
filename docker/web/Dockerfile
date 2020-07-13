@@ -27,7 +27,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 COPY php.ini /usr/local/etc/php/php.ini
 
 
-# Enable mod rewrite in apache
+# Configure apache
+COPY apache-default.conf /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite headers
 
 RUN echo "de_CH.UTF-8 UTF-8\nfr_CH.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen
