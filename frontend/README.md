@@ -27,3 +27,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Build docker image (from project directory root)
+```
+docker build -t vue-frontend -f docker/frontend/Dockerfile frontend
+```
