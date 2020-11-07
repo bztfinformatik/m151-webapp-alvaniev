@@ -18,11 +18,12 @@ RUN npm install
 # copy project files and folders to the current working directory ('app' folder)
 COPY . .
 
-# build vue application
-# built is copied into directory dist
+# build vue application in directory 'dist'
 RUN npm run build
 
 EXPOSE 8080
 
-# start http-sever with document root 'dist'
-CMD [ "http-server", "dist" ]
+# start http-sever
+# dist = document-root
+# -P http://localhost:8088? = catch-all redirect (for futur use)
+CMD [ "http-server", "dist", "-P", "http://localhost:8088?" ]

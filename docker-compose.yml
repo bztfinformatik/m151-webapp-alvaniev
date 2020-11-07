@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   docsify:
     build: ./docker/docsify
@@ -24,6 +24,14 @@ services:
         - "8020:80"
     volumes:
         - ./web:/var/www/html
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: ${PWD}/docker/frontend/Dockerfile
+    container_name: vue-forntend-app
+    ports:
+        - "8088:8080"
 
   db:
     image: mysql:8
